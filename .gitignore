@@ -1,0 +1,4 @@
+SysVIPC.bundle
+SysVIPC.o
+tmp/
+Gemfile.lock
