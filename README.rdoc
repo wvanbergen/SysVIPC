@@ -1,0 +1,3 @@
+=== SysVIPC
+
+Fork of the SysVIPC gem to fix packaging issues.

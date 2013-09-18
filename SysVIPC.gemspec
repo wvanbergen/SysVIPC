@@ -6,7 +6,7 @@ require 'SysVIPC/version'
 
 Gem::Specification.new do |s|
   s.name = 'SysVIPC'
-  s.rubyforge_project = s.name
+  s.rubyforge_project = 'sysvipc'
   
   # Do not change the version and date fields by hand. This will be done
   # automatically by the gem release script.
@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.email    = ['willem@railsdoctors.com']
   s.homepage = 'https://github.com/wvanbergen/SysVIPC'
 
-  s.extensions    = ["ext/extconf.rb"]
+  s.extensions    = ["ext/SysVIPC/extconf.rb"]
   s.require_paths = ["lib", "ext"]
 
   s.add_development_dependency('rake')

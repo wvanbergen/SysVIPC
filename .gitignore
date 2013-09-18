@@ -1,4 +1,5 @@
 SysVIPC.bundle
 SysVIPC.o
 tmp/
+pkg/
 Gemfile.lock
