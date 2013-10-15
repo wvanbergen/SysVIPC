@@ -7,19 +7,18 @@ require 'SysVIPC/version'
 Gem::Specification.new do |s|
   s.name = 'SysVIPC'
   s.rubyforge_project = 'sysvipc'
-  
-  # Do not change the version and date fields by hand. This will be done
-  # automatically by the gem release script.
+
   s.version = SysVIPC::VERSION
 
-  s.summary     = "System V IPC bindings for Ruby"
+  s.summary     = "System V Inter-Process Communication for Ruby"
   s.description = <<-EOT
-    This is a fork of the SysVIPC gem
+    Ruby extension that binds System V Inter-Process Communication:
+    message queues, semaphores, and shared memory.
   EOT
 
   s.license  = 'GPL2'
-  s.authors  = ['Willem van Bergen']
-  s.email    = ['willem@railsdoctors.com']
+  s.authors  = ['Steven Jenkins', 'Willem van Bergen']
+  s.email    = ['steven.jenkins@ieee.org', 'willem@railsdoctors.com']
   s.homepage = 'https://github.com/wvanbergen/SysVIPC'
 
   s.extensions    = ["ext/SysVIPC/extconf.rb"]
