@@ -1,3 +1,14 @@
 === SysVIPC
 
-Fork of the SysVIPC gem to fix packaging issues.
+This is now the official repository of the SysVIPC gem, which was previously
+hosted on RubyForge.
+
+For documentation, see http://www.rubydoc.info/gems/SysVIPC
+
+== Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
