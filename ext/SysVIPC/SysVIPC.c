@@ -277,6 +277,15 @@
 /* Flags for new pointer objects */
 #define SWIG_POINTER_OWN           0x1
 
+#define THREAD_SLEEP(milliseconds) do\
+{\
+	struct timeval st;\
+	st.tv_sec = 0;\
+	st.tv_usec = milliseconds * 1000;\
+	rb_thread_wait_for(st);\
+} while (0)
+
+
 
 /* 
    Flags/methods for returning states.
@@ -2135,7 +2144,7 @@ inner_msgrcv(int msqid, size_t msgsz, long msgtyp, int msgflg)
         case EAGAIN:
 #endif
             if (!nowait) {
-                rb_thread_polling ();
+                THREAD_SLEEP(50);
                 goto retry;
             }
         }
@@ -2189,7 +2198,7 @@ inner_msgsnd(int msqid, long int mtype, VALUE mtext, int msgflg)
         case EAGAIN:
 #endif
             if (!nowait) {
-                rb_thread_polling ();
+                THREAD_SLEEP(50);
                 goto retry;
             }
         }
@@ -2328,7 +2337,7 @@ static VALUE inner_semop(int semid, struct sembuf sops[], size_t nsops)
         case EAGAIN:
 #endif
           if (!nowait) {
-              rb_thread_polling ();
+              THREAD_SLEEP(50);
               goto retry;
             }
         }
