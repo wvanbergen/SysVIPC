@@ -17,8 +17,8 @@ Gem::Specification.new do |s|
   EOT
 
   s.license  = 'GPL2'
-  s.authors  = ['Steven Jenkins', 'Willem van Bergen']
-  s.email    = ['steven.jenkins@ieee.org', 'willem@railsdoctors.com']
+  s.authors  = ['Steven Jenkins', 'Willem van Bergen', 'Julian Mehnle']
+  s.email    = ['steven.jenkins@ieee.org', 'willem@railsdoctors.com', 'julian@mehnle.net']
   s.homepage = 'https://github.com/wvanbergen/SysVIPC'
 
   s.extensions    = ["ext/SysVIPC/extconf.rb"]
