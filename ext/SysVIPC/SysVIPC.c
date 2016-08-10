@@ -4993,7 +4993,7 @@ SWIGEXPORT void Init_SysVIPC(void) {
   }
   
   SWIG_RubyInitializeTrackings();
-  rb_define_const(mSysVIPC, "RELEASE", SWIG_FromCharPtr("0.9.9"));
+  rb_define_const(mSysVIPC, "RELEASE", SWIG_FromCharPtr("0.10.0"));
   rb_define_singleton_method(mSysVIPC, "errno", _wrap_errno_get, 0);
   rb_define_const(mSysVIPC, "IPC_CREAT", SWIG_From_int((int)(IPC_CREAT)));
   rb_define_const(mSysVIPC, "IPC_EXCL", SWIG_From_int((int)(IPC_EXCL)));
